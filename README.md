@@ -11,14 +11,9 @@ To use the `CityWeatherSDK`, you need to have the following dependencies in your
 ```xml
 <dependencies>
     <dependency>
-        <groupId>com.squareup.okhttp3</groupId>
-        <artifactId>okhttp</artifactId>
-        <version>4.9.1</version>
-    </dependency>
-    <dependency>
-        <groupId>com.google.code.gson</groupId>
-        <artifactId>gson</artifactId>
-        <version>2.8.9</version>
+        <groupId>com.github.dpa</groupId>
+        <artifactId>city-weather-sdk</artifactId>
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 ```
