@@ -21,8 +21,8 @@ public class CityWeatherSDKTest {
         mockWebServer = new MockWebServer();
         mockWebServer.start();
 
-        // Replace the base URL with the mock server URL
-        String apiKey = "1f8627c052f33a9e3686e12e6e6876ae";
+        // Replace with your own api key
+        String apiKey = "your_api_key";
         sdk = CityWeatherSDK.createInstance(apiKey, CityWeatherSDK.Mode.ON_DEMAND);
     }
 
@@ -91,17 +91,6 @@ public class CityWeatherSDKTest {
         assertEquals(52.52, geoData.get("lat").getAsDouble(), 0.01);
     }
 
-//    @Test
-//    public void testCacheSize() {
-//        String cityName1 = "Madrid";
-//        String cityName2 = "Rome";
-//
-//        sdk.getWeatherByCity(cityName1);
-//        sdk.getWeatherByCity(cityName2);
-//
-//        assertEquals(2, sdk.getCacheSize());
-//    }
-
     @Test
     public void testCacheSize() {
         String cityName1 = "Madrid";
@@ -116,16 +105,6 @@ public class CityWeatherSDKTest {
             fail("IOException occurred: " + e.getMessage());
         }
     }
-
-//    @Test
-//    public void testClearCache() {
-//        String cityName = "Tokyo";
-//        sdk.getWeatherByCity(cityName);
-//        assertEquals(1, sdk.getCacheSize());
-//
-//        sdk.clearCache();
-//        assertEquals(0, sdk.getCacheSize());
-//    }
 
     @Test
     public void testClearCache() {
@@ -143,47 +122,3 @@ public class CityWeatherSDKTest {
         }
     }
 }
-
-
-//import org.junit.jupiter.api.Test;
-//
-//import static org.junit.jupiter.api.Assertions.*;
-//
-//class CityWeatherSDKTest {
-//
-//    @Test
-//    void createInstance() {
-//    }
-//
-//    @Test
-//    void deleteInstance() {
-//    }
-//
-//    @Test
-//    void setPollingInterval() {
-//    }
-//
-//    @Test
-//    void getWeatherByCity() {
-//    }
-//
-//    @Test
-//    void getGeoData() {
-//    }
-//
-//    @Test
-//    void clearCache() {
-//    }
-//
-//    @Test
-//    void getCacheSize() {
-//    }
-//
-//    @Test
-//    void getCachedWeather() {
-//    }
-//
-//    @Test
-//    void shutdown() {
-//    }
-//}
