@@ -11,11 +11,18 @@ To use the `CityWeatherSDK`, you need to have the following dependencies in your
 ```xml
 <dependencies>
     <dependency>
-        <groupId>com.github.dpa</groupId>
-        <artifactId>city-weather-sdk</artifactId>
+        <groupId>com.github.padmitriev</groupId>
+        <artifactId>CityWeatherSDK</artifactId>
         <version>1.0.0</version>
     </dependency>
 </dependencies>
+
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 ```
 
 ## Usage Instructions
