@@ -30,6 +30,7 @@ To use the `CityWeatherSDK`, you need to have the following dependencies in your
 ### 1. Create an Instance of the SDK
 
 To use the SDK, you first need to create an instance by providing your OpenWeatherMap API key and selecting the operation mode (either `ON_DEMAND` or `POLLING`).
+You can obtain the key at https://home.openweathermap.org/api_keys.
 
 ```java
 CityWeatherSDK sdk = CityWeatherSDK.createInstance("your_api_key", CityWeatherSDK.Mode.ON_DEMAND);
