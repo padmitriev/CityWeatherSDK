@@ -1,4 +1,4 @@
-# CityWeatherSDK Documentation
+# CityWeatherSDK Documentation   [![](https://jitpack.io/v/padmitriev/CityWeatherSDK.svg)](https://jitpack.io/#padmitriev/CityWeatherSDK)
 
 ## Overview
 
