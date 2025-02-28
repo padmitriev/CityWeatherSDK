@@ -49,12 +49,7 @@ sdk.setPollingInterval(60000); // Set polling interval to 60 seconds
 You can retrieve weather data for a specific city using the `getWeatherByCity` method:
 
 ```java
-try {
     JsonObject weatherData = sdk.getWeatherByCity("London");
-    System.out.println(weatherData);
-} catch (IOException e) {
-    e.printStackTrace();
-}
 ```
 
 ### 4. Retrieve Geographical Data
@@ -62,12 +57,7 @@ try {
 To get geographical data for a city, use the `getGeoData` method:
 
 ```java
-try {
     JsonObject geoData = sdk.getGeoData("Berlin");
-    System.out.println(geoData);
-} catch (IOException e) {
-    e.printStackTrace();
-}
 ```
 
 ### 5. Cache Management
